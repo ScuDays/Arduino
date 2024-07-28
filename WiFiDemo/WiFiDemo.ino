@@ -10,6 +10,7 @@ const char* apiServer = "https://api.map.baidu.com/weather/v1/?district_id=51011
 
 static String weathertext;
 static int temp;
+static int count;
 
 void getWeather(){
   http.begin(apiServer);
@@ -44,5 +45,14 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+  // if(digitalRead(0) == HIGH){
+  //   if(WiFi.status() == WL_CONNECTED){
+  //     getWeather();
+  //     count ++;
+  //     Serial.println("\n/n");
+  //      Serial.println(count);
+  //   }
+  //   delay(200);
+  // }
+  // delay(200);
 }
